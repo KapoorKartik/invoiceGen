@@ -1,0 +1,1 @@
+export const url = "https://localhost/generate-invoice/generatePdf.php";
