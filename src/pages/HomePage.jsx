@@ -7,7 +7,7 @@ export const HomePage = () => {
         [1,2].map((ele,i)=>{
             console.log("hello",ele)
             axios({
-                url: url,
+                url: `${url}generatePdf.php`,
                 method: 'GET',
                 responseType: 'blob', // Important: responseType as 'blob' to handle binary data
             })
@@ -34,6 +34,10 @@ export const HomePage = () => {
             });
         })
     };
+
+    const fetchData = () =>{
+        
+    }
   return (
     <>
     <div>HomePage</div>
