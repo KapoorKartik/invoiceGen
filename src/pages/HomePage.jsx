@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { url } from '../constant'
+import InvoiceList from '../components/Details';
 
 export const HomePage = () => {
     const handleDownloadPdf = () => {
@@ -41,6 +42,7 @@ export const HomePage = () => {
   return (
     <>
     <div>HomePage</div>
+    <InvoiceList />
     <button onClick={handleDownloadPdf}> click to download sample pdf</button>
     </>
   )
