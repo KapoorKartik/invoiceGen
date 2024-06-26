@@ -44,6 +44,9 @@ const InvoiceList = () => {
           </tr>
         </thead>
         <tbody>
+          {dataArr?.map((ele,i) =>{
+            
+          })}
           <tr>
             <td>John Doe</td>
             <td>123 Main St</td>
