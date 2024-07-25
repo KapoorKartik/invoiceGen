@@ -116,6 +116,7 @@ export const HomePage = () => {
             <th>Invoice Number</th>
             <th>Name</th>
             <th>Address</th>
+            <th>Amount</th>
             <th>Select</th>
           </tr>
         </thead>
@@ -124,6 +125,7 @@ export const HomePage = () => {
             <tr key={i}>
               <td>{invoiceNumber + i}</td>
               <td>{ele.name}</td>
+              <td>{ele.amount}</td>
               <td>{ele.address}</td>
               <td>
                 <input
