@@ -19,16 +19,10 @@ export const HomePage = () => {
                 // return 
                 const blob = new Blob([res.data], { type: 'application/pdf' });
                 const url = window.URL.createObjectURL(blob);
-        // Create a new tab with the PDF URL
-        window.open(url, '_blank');
-
-        // Cleanup: revoke the URL object
-        URL.revokeObjectURL(url);
-        return
-                // Create a link element, set its href and download attributes, then trigger a click on it
+       
                 const link = document.createElement('a');
                 link.href = url;
-                let fileName = "kartik_" + Date.now() + ".pdf"
+                let fileName = "invoice_" + Date.now() + ".pdf"
                 link.setAttribute('download', fileName);
                 document.body.appendChild(link);
                 link.click();
@@ -83,7 +77,6 @@ export const HomePage = () => {
 
   return (
     <>
-    <div>HomePage</div>
     <div className="mx-4">
       <h1 className="text-center mb-4">Invoice List</h1>
       <div className="input-group mb-3">

@@ -1,1 +1,1 @@
-export const url = "https://localhost/generate-invoice/generatePdf.php";
+export const url = "https://payments.ignouplus.com/generatePdf.php";
