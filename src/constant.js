@@ -1,1 +1,2 @@
-export const url = "https://payments.ignouplus.com/generatePdf.php";
+export const url = import.meta.env.MODE === 'development' ? "https://localhost/generate-invoice/generatePdf.php" : "https://payments.ignouplus.com/generatePdf.php";
+console.log('import.meta.env.MODE:', import.meta.env.MODE)
